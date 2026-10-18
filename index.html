@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1558A0">
+<title>REASONIQ99 - Founding 999 Registration</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1558A0;--bd:#B8D0F0;--bg:#F8FBFF;--ink:#0F2A4D;--muted:#6A8BB5}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);font-family:Inter,Arial,sans-serif;padding:16px;color:var(--ink)}
+.card{max-width:560px;margin:20px auto;background:#fff;border:1.5px solid #E2ECF8;border-radius:20px;padding:24px;box-shadow:0 14px 36px rgba(21,88,160,.08)}
+.badge{background:#EAF2FF;border:1px solid var(--bd);color:var(--blue);padding:9px 14px;border-radius:100px;font-size:12px;font-weight:700;text-align:center;display:block}
+h1{font-family:'Plus Jakarta Sans',Inter,sans-serif;text-align:center;margin:16px 0 6px;font-size:clamp(22px,5vw,28px)}
+.sub{text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
+.mini{display:flex;gap:8px;margin-top:18px}.mini div{flex:1;background:#EAF2FF;border-radius:10px;padding:10px 5px;text-align:center;border:1px solid var(--bd)}
+.mini b{color:var(--blue);font-size:18px;display:block}.mini span{font-size:10px;font-weight:700;color:#5A7AA0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+label.field-label{font-size:12px;font-weight:700;color:var(--ink);margin-top:14px;display:block}
+input:not([type=checkbox]),select{width:100%;padding:13px;margin-top:6px;border:1.5px solid var(--bd);border-radius:10px;font-size:14px;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:3px solid #D7E7FF;border-color:var(--blue)}
+.privacy{display:flex;gap:10px;font-size:11.5px;line-height:1.55;margin-top:16px;background:#F8FBFF;padding:12px;border-radius:10px;border:1px solid var(--bd);align-items:flex-start}
+.privacy input{width:18px;height:18px;flex:0 0 18px;margin-top:2px}
+a{color:var(--blue);font-weight:700;text-decoration:underline}
+.btn{width:100%;padding:14px;background:var(--blue);color:#fff;border:0;border-radius:11px;font-weight:700;font-size:15px;margin-top:18px;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:wait}
+.msg{margin-top:14px;padding:12px;border-radius:10px;font-size:13px;line-height:1.5;text-align:center;display:none;overflow-wrap:anywhere}
+.ok{background:#E6F4EA;color:#15562C;border:1px solid #A8D8B4}.err{background:#FDE8E8;color:#7F1D1D;border:1px solid #F2A8A8}
+.note{margin-top:14px;background:#FFF8E6;border:1px solid #F0D58A;color:#6B4D00;padding:11px;border-radius:10px;font-size:11px;line-height:1.5}
+.footer{max-width:560px;margin:16px auto;text-align:center;font-size:10.5px;color:var(--muted);line-height:1.7}
+@media(max-width:480px){.card{padding:18px}.grid{grid-template-columns:1fr}.mini span{font-size:9px}}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="badge">🎯 FOUNDING BATCH: 999/999 LEFT</div>
+<h1>Join the First 999 Aspirants</h1>
+<p class="sub">Register your interest in the REASONIQ99 Founding Batch.<br>Registration reference is assigned after successful submission.</p>
+<div class="mini"><div><b>—</b><span>REGISTERED</span></div><div><b>999</b><span>BATCH LIMIT</span></div><div><b>—</b><span>FILLED</span></div></div>
+<form id="registrationForm">
+<div class="grid">
+<div><label class="field-label" for="name">Full Name *</label><input id="name" name="name" autocomplete="name" placeholder="Rahul Sharma" required maxlength="100"></div>
+<div><label class="field-label" for="mobile">Mobile Number *</label><input id="mobile" name="mobile" autocomplete="tel-national" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" required></div>
+<div><label class="field-label" for="email">Email Address *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254"></div>
+<div><label class="field-label" for="state">State *</label><select id="state" name="state" required><option value="">Select your state/UT</option>
+<option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option><option>Andaman and Nicobar Islands</option><option>Chandigarh</option><option>Dadra and Nagar Haveli and Daman and Diu</option><option>Delhi</option><option>Jammu and Kashmir</option><option>Ladakh</option><option>Lakshadweep</option><option>Puducherry</option>
+</select></div></div>
+<label class="field-label" for="course">Course / Exam Interested In *</label>
+<select id="course" name="course" required><option value="">Select a course or exam</option><option>UPSC / Civil Services</option><option>SSC</option><option>Banking</option><option>Railways</option><option>State Government Exams</option><option>Teaching Exams</option><option>Other Competitive Exams</option><option>General Reasoning Practice</option></select>
+<label class="privacy" for="privacy"><input type="checkbox" id="privacy" name="privacy" required><span>I agree to the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and Terms. My name, mobile, email, state, and course choice may be used for REASONIQ99 Founding Batch updates and support as described in the policy. I can withdraw consent or request deletion by contacting <a href="mailto:contact@reasoniq99.in">contact@reasoniq99.in</a>. *</span></label>
+<button class="btn" id="submitBtn" type="submit">Submit Registration</button>
+<div class="msg" id="message" role="status" aria-live="polite"></div>
+<div class="note"><strong>Setup required:</strong> Replace <code>YOUR_GOOGLE_APPS_SCRIPT_URL_HERE</code> in this file with your deployed Google Apps Script Web App URL. Until configured, this form will not submit or store personal data.</div>
+</form>
+</main>
+<footer class="footer">REASONIQ99 · Founding 999 Registration<br><a href="privacy.html">Privacy Policy</a> · <a href="mailto:contact@reasoniq99.in">Contact</a></footer>
+<script>
+// Set this to your deployed Google Apps Script Web App /exec URL.
+// The Apps Script should validate data, create unique registration numbers,
+// save to the sheet, and return JSON like {"success":true,"regNo":"R99-001"}.
+const SHEET_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const form=document.getElementById("registrationForm"),btn=document.getElementById("submitBtn"),msg=document.getElementById("message");
+function showMessage(text,type){msg.textContent=text;msg.className="msg "+type;msg.style.display="block";}
+form.addEventListener("submit",async e=>{
+e.preventDefault();msg.style.display="none";
+if(!document.getElementById("privacy").checked){showMessage("Please accept the Privacy Policy before submitting.","err");return;}
+const mobile=document.getElementById("mobile").value.trim();
+if(!/^[6-9]\d{9}$/.test(mobile)){showMessage("Please enter a valid 10-digit Indian mobile number.","err");document.getElementById("mobile").focus();return;}
+if(!SHEET_URL||SHEET_URL==="YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"){showMessage("The form is not connected yet. The site owner must add the deployed Google Apps Script URL before registrations can be saved.","err");return;}
+const payload={name:document.getElementById("name").value.trim(),mobile,email:document.getElementById("email").value.trim(),state:document.getElementById("state").value,course:document.getElementById("course").value,consent:true,consentPolicy:"REASONIQ99 Privacy Policy",submittedAt:new Date().toISOString()};
+btn.disabled=true;btn.textContent="Submitting…";
+try{
+const response=await fetch(SHEET_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+if(!response.ok)throw new Error("Service error");
+const result=await response.json();if(!result.success)throw new Error(result.message||"Registration failed");
+showMessage("Registration successful! Your registration number is "+(result.regNo||"confirmed")+". Check your email if confirmation emails have been configured.","ok");form.reset();
+}catch(err){showMessage("We could not confirm your registration. Please try again later or contact contact@reasoniq99.in.","err");}
+finally{btn.disabled=false;btn.textContent="Submit Registration";}
+});
+</script>
+</body></html>
