@@ -49,7 +49,7 @@ a{color:var(--blue);font-weight:700;text-decoration:underline}
 <label class="privacy" for="privacy"><input type="checkbox" id="privacy" name="privacy" required><span>I agree to the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and Terms. My name, mobile, email, state, and course choice may be used for REASONIQ99 Founding Batch updates and support as described in the policy. I can withdraw consent or request deletion by contacting <a href="mailto:contact@reasoniq99.in">contact@reasoniq99.in</a>. *</span></label>
 <button class="btn" id="submitBtn" type="submit">Submit Registration</button>
 <div class="msg" id="message" role="status" aria-live="polite"></div>
-<div class="note"><strong>Setup required:</strong> Replace <code>YOUR_GOOGLE_APPS_SCRIPT_URL_HERE</code> in this file with your deployed Google Apps Script Web App URL. Until configured, this form will not submit or store personal data.</div>
+<div class="note"><strong>Setup required:</strong> Replace <code>https://docs.google.com/spreadsheets/d/1G5xxdA0oWXF1tsiFktO_Kcie730uDo4rrn_Aw2rkbTI/edit?usp=drivesdk</code> in this file with your deployed Google Apps Script Web App URL. Until configured, this form will not submit or store personal data.</div>
 </form>
 </main>
 <footer class="footer">REASONIQ99 · Founding 999 Registration<br><a href="privacy.html">Privacy Policy</a> · <a href="mailto: reasoniq99@gmail.com">Contact</a></footer>
@@ -57,15 +57,15 @@ a{color:var(--blue);font-weight:700;text-decoration:underline}
 // Set this to your deployed Google Apps Script Web App /exec URL.
 // The Apps Script should validate data, create unique registration numbers,
 // save to the sheet, and return JSON like {"success":true,"regNo":"R99-001"}.
-const SHEET_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const SHEET_URL = ,"https://docs.google.com/spreadsheets/d/1G5xxdA0oWXF1tsiFktO_Kcie730uDo4rrn_Aw2rkbTI/edit?usp=drivesdk";
 const form=document.getElementById("registrationForm"),btn=document.getElementById("submitBtn"),msg=document.getElementById("message");
 function showMessage(text,type){msg.textContent=text;msg.className="msg "+type;msg.style.display="block";}
 form.addEventListener("submit",async e=>{
 e.preventDefault();msg.style.display="none";
 if(!document.getElementById("privacy").checked){showMessage("Please accept the Privacy Policy before submitting.","err");return;}
 const mobile=document.getElementById("mobile").value.trim();
-if(!/^[6-9]\d{9}$/.test(mobile)){showMessage("Please enter a valid 10-digit Indian mobile number.","err");document.getElementById("mobile").focus();return;}
-if(!SHEET_URL||SHEET_URL==="YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"){showMessage("The form is not connected yet. The site owner must add the deployed Google Apps Script URL before registrations can be saved.","err");return;}
+if(!/^[6-9]\d{9}$/.test(mobile)){showMessage("Please enter a valid 10-digit Indian mobile number.","err");document.getElementById("mobilehttps://docs.google.com/spreadsheets/d/1G5xxdA0oWXF1tsiFktO_Kcie730uDo4rrn_Aw2rkbTI/edit?usp=drivesdk();return;}
+if(!SHEET_URL||SHEET_URL==="https://docs.google.com/spreadsheets/d/1G5xxdA0oWXF1tsiFktO_Kcie730uDo4rrn_Aw2rkbTI/edit?usp=drivesdk"){showMessage("The form is not connected yet. The site owner must add the deployed Google Apps Script URL before registrations can be saved.","err");return;}
 const payload={name:document.getElementById("name").value.trim(),mobile,email:document.getElementById("email").value.trim(),state:document.getElementById("state").value,course:document.getElementById("course").value,consent:true,consentPolicy:"REASONIQ99 Privacy Policy",submittedAt:new Date().toISOString()};
 btn.disabled=true;btn.textContent="Submitting…";
 try{
