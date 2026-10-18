@@ -52,7 +52,7 @@ a{color:var(--blue);font-weight:700;text-decoration:underline}
 <div class="note"><strong>Setup required:</strong> Replace <code>YOUR_GOOGLE_APPS_SCRIPT_URL_HERE</code> in this file with your deployed Google Apps Script Web App URL. Until configured, this form will not submit or store personal data.</div>
 </form>
 </main>
-<footer class="footer">REASONIQ99 · Founding 999 Registration<br><a href="privacy.html">Privacy Policy</a> · <a href="mailto:contact@reasoniq99.in">Contact</a></footer>
+<footer class="footer">REASONIQ99 · Founding 999 Registration<br><a href="privacy.html">Privacy Policy</a> · <a href="mailto: reasoniq99@gmail.com">Contact</a></footer>
 <script>
 // Set this to your deployed Google Apps Script Web App /exec URL.
 // The Apps Script should validate data, create unique registration numbers,
@@ -73,7 +73,7 @@ const response=await fetch(SHEET_URL,{method:"POST",headers:{"Content-Type":"tex
 if(!response.ok)throw new Error("Service error");
 const result=await response.json();if(!result.success)throw new Error(result.message||"Registration failed");
 showMessage("Registration successful! Your registration number is "+(result.regNo||"confirmed")+". Check your email if confirmation emails have been configured.","ok");form.reset();
-}catch(err){showMessage("We could not confirm your registration. Please try again later or contact contact@reasoniq99.in.","err");}
+}catch(err){showMessage("We could not confirm your registration. Please try again later or contact reasoniq99@gmail.com.","err");}
 finally{btn.disabled=false;btn.textContent="Submit Registration";}
 });
 </script>
